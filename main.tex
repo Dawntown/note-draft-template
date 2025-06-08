@@ -1,0 +1,40 @@
+\documentclass[working]{article}
+
+\input{preamble}
+% Warning: this template does not support Chinese.
+
+\geometry{a4paper,left=2cm,right=6cm,top=2cm,bottom=2cm}
+\setlength{\marginparwidth}{4cm}
+\linenumbers
+\bibliographystyle{abbrvnat}
+% \setcitestyle{numbers,open={[},close={]},comma,super}
+\setcitestyle{authoryear,open={(},close={)},comma}
+
+\title{Mathematical Notes}
+\author{Foo Bar}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% \begin{framed}{\large
+% TODO list of the following week
+% \begin{itemize}
+%     \item Finish the note organization work of Part II
+%     \item Read Chapters 9 and 10
+%     \item Course works
+% \end{itemize}
+% }
+% \end{framed}
+
+This is a test.
+
+\input{sections/introduction}
+
+\listnotes
+\bibliography{ref.bib}
+
+% \nocite{*}
+
+\end{document}

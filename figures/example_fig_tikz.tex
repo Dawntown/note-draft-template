@@ -1,0 +1,24 @@
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+        % Define node styles
+        \tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+            text width=5em, text centered, rounded corners, minimum height=4em]
+        \tikzstyle{line} = [draw, -latex']
+        
+        % Place nodes
+        \node [block] (input) {Input layer};
+        \node [block, right of=input, node distance=3cm] (hidden) {Hidden layer};
+        \node [block, right of=hidden, node distance=3cm] (output) {Output layer};
+        
+        % Connect nodes
+        \path [line] (input) -- (hidden);
+        \path [line] (hidden) -- (output);
+        
+        % Add labels
+        \node [above of=input, node distance=1.5cm] {Features};
+        \node [above of=output, node distance=1.5cm] {Prediction};
+    \end{tikzpicture}
+    \caption{Example figure: Simple neural network structure}
+    \label{fig:neural-network}
+\end{figure}
